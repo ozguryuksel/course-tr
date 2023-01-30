@@ -1,7 +1,9 @@
 import React from "react";
 class UserSignupPage extends React.Component{
     render(){
+        const newLocal = 'password';
         return(
+            <form>
 <div>
     <h1>Sign Up</h1>
     <div><label>User Name</label>
@@ -13,7 +15,7 @@ class UserSignupPage extends React.Component{
     </div>
     <div>
     <label>Password</label>
-    <input type='password'/>
+    <input type={newLocal}/>
     </div>
     <div>
     <label>Password Repeat</label>
@@ -23,6 +25,7 @@ class UserSignupPage extends React.Component{
         <button>Sign Up</button>
     </div>
 </div>
+</form>
         );
     }
 }
